@@ -3,8 +3,7 @@ const nextConfig = {
   trailingSlash: true,
   output: "export",
   images: {
-    loader: "custom",
-    loaderFile: "./ImageLoader.tsx"
+    unoptimized: true
   }
 };
 

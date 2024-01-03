@@ -12,9 +12,10 @@ interface Icon {
 }
 
 function Icon({ src, alt = "", className, width, height, onClick }: Icon) {
+  const imagePrefix = process.env.NEXT_PUBLIC_ENV  === "development"? src : `${process.env.NEXT_PUBLIC_FACEBOOK_CLIENT_SECRET}/${src}`
   return (
     <Image
-      src={src}
+      src={imagePrefix}
       alt={alt}
       className={className}
       width={width}
