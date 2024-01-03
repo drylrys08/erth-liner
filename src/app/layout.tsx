@@ -14,9 +14,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  
+  const imagePath = process.env.NODE_ENV === "development" ? "" : process.env.NEXT_PUBLIC_IMAGE_PREFIX
   return (
     <html lang="en">
       <head>
+         <base href={imagePath}/>
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"

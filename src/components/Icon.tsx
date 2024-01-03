@@ -12,7 +12,7 @@ interface Icon {
 }
 
 function Icon({ src, alt = "", className, width, height, onClick }: Icon) {
-  const imagePrefix = process.env.NEXT_PUBLIC_ENV  === "development"? src : `${process.env.NEXT_PUBLIC_FACEBOOK_CLIENT_SECRET}/${src}`
+  const imagePrefix = process.env.NEXT_PUBLIC_ENV  === "development"? src : `${process.env.NEXT_PUBLIC_IMAGE_PREFIX}${src}`
   return (
     <Image
       src={imagePrefix}

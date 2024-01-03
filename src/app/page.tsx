@@ -3,7 +3,7 @@ import React from "react";
 
 import MainLayout from "@/components/layout/MainLayout";
 import LandingPage from "@/components/LandingPage";
-import Image from "next/image";
+import Image from "@/components/Image";
 
 function page() {
   return (
