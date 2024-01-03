@@ -5,8 +5,6 @@ stages:
   - deploy
 
 before_script:
-  - nvm install
-  - nvm use
   - npm install
 
 build:

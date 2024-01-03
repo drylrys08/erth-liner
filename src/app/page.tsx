@@ -3,6 +3,7 @@ import React from "react";
 
 import MainLayout from "@/components/layout/MainLayout";
 import LandingPage from "@/components/LandingPage";
+import Image from "next/image";
 
 function page() {
   return (
@@ -10,10 +11,12 @@ function page() {
       <LandingPage />
       <section className="flex flex-col md:flex-row items-center py-16 md:justify-center gap-2 md:gap-3 lg:gap-10">
         <div className="flex md:justify-end w-10/12 md:w-1/2 md:px-4">
-          <img
+          <Image
             className="w-[900px] lg:w-[700px]  rounded-lg"
             src="/assets/img/cargo1.jpg"
             alt="Your Image"
+            width={900}
+            height={900}
           />
         </div>
 
