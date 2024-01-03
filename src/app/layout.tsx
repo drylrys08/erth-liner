@@ -14,22 +14,19 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  
-  const imagePath = process.env.NODE_ENV === "development" ? "" : process.env.NEXT_PUBLIC_IMAGE_PREFIX
+  const imagePath =
+    process.env.NODE_ENV === "development"
+      ? "/assets/svg/logo.svg"
+      : process.env.NEXT_PUBLIC_IMAGE_PREFIX + "/assets/svg/logo.svg";
   return (
     <html lang="en">
       <head>
-         <base href={imagePath}/>
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         />
-        <link rel="icon" href="/assets/svg/logo.svg" type="image/x-icon" />
-        <link
-          rel="shortcut icon"
-          href="/assets/svg/logo.svg"
-          type="image/x-icon"
-        />
+        <link rel="icon" href={imagePath} type="image/x-icon" />
+        <link rel="shortcut icon" href={imagePath} type="image/x-icon" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
