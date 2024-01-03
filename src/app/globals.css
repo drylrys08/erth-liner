@@ -17,11 +17,3 @@ body {
 .text-stroke {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
 }
-.landing-page-img {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0)
-    ),
-    url("/assets/img/cargo3.jpg");
-}
