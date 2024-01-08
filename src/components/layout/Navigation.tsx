@@ -18,7 +18,7 @@ function LandingPageNavigation({ toggleNav, navToggle }: any) {
               src="/assets/img/ERTH4.png"
               alt="logo"
               height={20}
-              width={155}
+              width={160}
               className="z-0"
             />
           </a>
@@ -26,26 +26,43 @@ function LandingPageNavigation({ toggleNav, navToggle }: any) {
         <div className="hidden md:block ">
           <ul className="flex md:gap-[10px] lg:gap-[32px] ">
             <li>
-              <a className="text-white" href="/">
+              <a
+                className="text-[#F1F1F1] hover:text-[#FDB827]  hover:border-b-2 pb-2"
+                href="/"
+              >
                 Home
               </a>
             </li>
             <li>
-              <a className="text-white" href="#">
+              <a
+                className="text-[#F1F1F1] hover:text-[#FDB827]  hover:border-b-2 pb-2"
+                href="#"
+              >
                 About Us
               </a>
             </li>
             <li>
-              <a className="text-white" href="#">
-                Solutions
+              <a
+                className="text-[#F1F1F1] hover:text-[#FDB827]  hover:border-b-2 pb-2"
+                href="#"
+              >
+                Services
               </a>
             </li>
             <li>
-              <a className="text-white" href="#">
+              <a
+                className="text-[#F1F1F1] hover:text-[#FDB827]  hover:border-b-2 pb-2"
+                href="#"
+              >
                 Contact Us
               </a>
             </li>
           </ul>
+        </div>
+        <div className="hidden md:block">
+          <h1 className="text-[#FDB827] font-bold border border-[#F1F1F1] rounded-lg p-4">
+            Call us: +63 987 654 3210
+          </h1>
         </div>
 
         <div className="md:hidden" onClick={handleToggleNav}>
@@ -55,7 +72,7 @@ function LandingPageNavigation({ toggleNav, navToggle }: any) {
               alt="button"
               height={20}
               width={20}
-              className=" cursor-pointer fill-white z-10"
+              className=" cursor-pointer fill-[#F1F1F1] z-10"
             />
           )}
         </div>

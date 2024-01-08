@@ -4,9 +4,15 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 
 function Footer() {
+  const bg =
+    process.env.NODE_ENV === "development"
+      ? `bg-[url("/assets/img/containers1.png")]`
+      : `bg-[url("https://drylrys08.github.io/erth-liner/assets/img/containers1.png")]`;
   return (
-    <div className="bg-[#000000] flex flex-col-reverse lg:flex-row lg:justify-between py-5 md:px-40">
-      <div className="text-[#FFFFFF] flex flex-col p-4">
+    <div
+      className={`bg-[#181818] flex flex-col-reverse lg:flex-row lg:justify-between py-12 md:px-40 bg-no-repeat bg-cover bg-center ${bg} rounded-t-3xl mx-3 `}
+    >
+      <div className="text-[#F1F1F1] flex flex-col p-4">
         <Icon
           src="/assets/svg/logo.svg"
           alt="logo"
@@ -20,7 +26,7 @@ function Footer() {
         </h4>
       </div>
 
-      <div className="text-[#FFFFFF] flex flex-col p-4 gap-4">
+      <div className="text-[#F1F1F1] flex flex-col p-4 gap-4">
         <div>
           <h1 className="font-extrabold">Working Hours</h1>
           <h4 className="text-sm">Mon - Fri: 8am - 5pm</h4>
@@ -34,7 +40,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="text-[#FFFFFF] flex flex-col gap-3 p-4">
+      <div className="text-[#F1F1F1] flex flex-col gap-3 p-4">
         <h1 className="font-extrabold">CONTACT US</h1>
         <div>
           <h4 className="text-sm">Phone Nos:</h4>
@@ -52,7 +58,7 @@ function Footer() {
           </a>
         </div>
       </div>
-      <div className="text-[#FFFFFF] flex flex-col p-4 gap-4">
+      <div className="text-[#F1F1F1] flex flex-col p-4 gap-4">
         <h1 className="font-extrabold">FOLLOW US ON</h1>
         <div className="flex gap-4">
           <FaFacebook size={30} />
