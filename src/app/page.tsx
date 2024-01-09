@@ -13,7 +13,7 @@ function page() {
       <LandingPage />
       <ChooseUs />
       <ShortAbout />
-      {process.env.NODE_ENV === "production" && <FacebookMsg />}
+      {/* {process.env.NODE_ENV === "production" && <FacebookMsg />} */}
     </MainLayout>
   );
 }
