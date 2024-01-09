@@ -4,8 +4,8 @@ import React from "react";
 function LandingPage() {
   const bg =
     process.env.NODE_ENV === "development"
-      ? `bg-[linear-gradient(to_bottom,rgba(0,0,0,1),rgba(0,0,0,0.7)),url("/assets/img/cargo3.jpg")]`
-      : `bg-[linear-gradient(to_bottom,rgba(0,0,0,1),rgba(0,0,0,0.7)),url("https://drylrys08.github.io/erth-liner/assets/img/cargo3.jpg")]`;
+      ? `bg-[linear-gradient(to_bottom,rgba(0,0,0,1),rgba(0,0,0,0.7)),url("/assets/img/cargos3.jpg")]`
+      : `bg-[linear-gradient(to_bottom,rgba(0,0,0,1),rgba(0,0,0,0.7)),url("https://drylrys08.github.io/erth-liner/assets/img/cargos3.jpg")]`;
 
   return (
     <div
