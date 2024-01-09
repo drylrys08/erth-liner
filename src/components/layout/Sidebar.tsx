@@ -1,5 +1,6 @@
 import React from "react";
 import Icon from "../Icon";
+import UrlFormater from "@/lib/UrlFormater";
 
 function Sidebar({ handleToggleNav, navToggle }: any) {
   return (
@@ -27,22 +28,22 @@ function Sidebar({ handleToggleNav, navToggle }: any) {
 
         <ul className="absolute  md:hidden m-2 flex flex-col top-20  gap-4 p-4">
           <li>
-            <a className="text-sm text-black" href="#">
+            <a className="text-sm text-black" href={UrlFormater("/")}>
               Home
             </a>
           </li>
           <li>
-            <a className="text-sm text-black" href="#">
+            <a className="text-sm text-black" href={UrlFormater("/about-us")}>
               About Us
             </a>
           </li>
           <li>
-            <a className="text-sm text-black" href="#">
-              Solutions
+            <a className="text-sm text-black" href={UrlFormater("/services")}>
+              Services
             </a>
           </li>
           <li>
-            <a className="text-sm text-black" href="#">
+            <a className="text-sm text-black" href={UrlFormater("/contact-us")}>
               Contact Us
             </a>
           </li>

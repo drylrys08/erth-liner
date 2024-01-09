@@ -3,6 +3,7 @@
 import Icon from "@/components/Icon";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
+import UrlFormater from "@/lib/UrlFormater";
 function LandingPageNavigation({ toggleNav, navToggle }: any) {
   const router = useRouter();
 
@@ -28,7 +29,7 @@ function LandingPageNavigation({ toggleNav, navToggle }: any) {
             <li>
               <a
                 className="text-[#F1F1F1] hover:text-[#FDB827]  hover:border-b-2 pb-2"
-                href="/"
+                href={UrlFormater("/")}
               >
                 Home
               </a>
@@ -36,7 +37,7 @@ function LandingPageNavigation({ toggleNav, navToggle }: any) {
             <li>
               <a
                 className="text-[#F1F1F1] hover:text-[#FDB827]  hover:border-b-2 pb-2"
-                href="/about-us"
+                href={UrlFormater("/about-us")}
               >
                 About Us
               </a>
@@ -44,7 +45,7 @@ function LandingPageNavigation({ toggleNav, navToggle }: any) {
             <li>
               <a
                 className="text-[#F1F1F1] hover:text-[#FDB827]  hover:border-b-2 pb-2"
-                href="/services"
+                href={UrlFormater("/services")}
               >
                 Services
               </a>
@@ -52,7 +53,7 @@ function LandingPageNavigation({ toggleNav, navToggle }: any) {
             <li>
               <a
                 className="text-[#F1F1F1] hover:text-[#FDB827]  hover:border-b-2 pb-2"
-                href="/contact-us"
+                href={UrlFormater("/contact-us")}
               >
                 Contact Us
               </a>
