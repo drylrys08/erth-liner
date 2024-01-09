@@ -6,6 +6,7 @@ import LandingPage from "@/components/LandingPage";
 import ChooseUs from "@/components/ChooseUs";
 import ShortAbout from "@/components/ShortAbout";
 import FacebookMsg from "@/components/FacebookMsg";
+import Services from "@/components/Services";
 
 function page() {
   return (
@@ -13,7 +14,8 @@ function page() {
       <LandingPage />
       <ChooseUs />
       <ShortAbout />
-      {process.env.NODE_ENV === "production" && <FacebookMsg />}
+      <Services />
+      {/* {process.env.NODE_ENV === "production" && <FacebookMsg />} */}
     </MainLayout>
   );
 }
