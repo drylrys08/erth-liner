@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import FacebookMsg from "@/components/FacebookMsg";
+import UrlFormater from "@/lib/UrlFormater";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,10 +16,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const imagePath =
-    process.env.NODE_ENV === "development"
-      ? "/assets/svg/logo.svg"
-      : process.env.NEXT_PUBLIC_IMAGE_PREFIX + "/assets/svg/logo.svg";
+  const imagePath = UrlFormater("/assets/svg/logo.svg");
+
   return (
     <html lang="en">
       <head>
@@ -28,7 +28,10 @@ export default function RootLayout({
         <link rel="icon" href={imagePath} type="image/x-icon" />
         <link rel="shortcut icon" href={imagePath} type="image/x-icon" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        {process.env.NODE_ENV === "development" && <FacebookMsg />}
+      </body>
     </html>
   );
 }
