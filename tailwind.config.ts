@@ -14,6 +14,15 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      "mid-lg": "",
+      xl: "1280px",
+      "2xl": "1536px",
+      screen: "1669px",
+    },
   },
   plugins: [require("tailwindcss-animated")],
 };
