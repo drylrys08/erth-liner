@@ -28,10 +28,7 @@ export default function RootLayout({
         <link rel="icon" href={imagePath} type="image/x-icon" />
         <link rel="shortcut icon" href={imagePath} type="image/x-icon" />
       </head>
-      <body className={inter.className}>
-        {children}
-        {process.env.NODE_ENV === "development" && <FacebookMsg />}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
