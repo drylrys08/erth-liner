@@ -17,14 +17,16 @@ function ShortAbout() {
             Solutions.
           </h1>
           <p className="text-[#F1F1F1] lg:text-base/[35px]">
-            At Erth liner Cargo Express Co., we understand the complexities of
-            international trade and the critical role that customs brokerage
-            plays in ensuring the smooth flow of goods across borders. Our
-            dedicated team of experts is committed to providing you with
-            top-notch customs brokerage services tailored to your unique
-            business needs.
+            We understand the complexities of international trade and the
+            critical role that customs brokerage plays in ensuring the smooth
+            flow of goods across borders. Our dedicated team of experts is
+            committed to providing you with top-notch customs brokerage services
+            tailored to your unique business needs.
           </p>
-          <a href="#" className="underline text-[#F1F1F1] hover:text-[#363636]">
+          <a
+            href="/about-us"
+            className="underline text-[#F1F1F1] hover:text-[#363636]"
+          >
             Know more about us
           </a>
         </div>

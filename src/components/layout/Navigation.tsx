@@ -36,7 +36,7 @@ function LandingPageNavigation({ toggleNav, navToggle }: any) {
             <li>
               <a
                 className="text-[#F1F1F1] hover:text-[#FDB827]  hover:border-b-2 pb-2"
-                href="#"
+                href="/about-us"
               >
                 About Us
               </a>
@@ -44,7 +44,7 @@ function LandingPageNavigation({ toggleNav, navToggle }: any) {
             <li>
               <a
                 className="text-[#F1F1F1] hover:text-[#FDB827]  hover:border-b-2 pb-2"
-                href="#"
+                href="/services"
               >
                 Services
               </a>
@@ -52,7 +52,7 @@ function LandingPageNavigation({ toggleNav, navToggle }: any) {
             <li>
               <a
                 className="text-[#F1F1F1] hover:text-[#FDB827]  hover:border-b-2 pb-2"
-                href="#"
+                href="/contact-us"
               >
                 Contact Us
               </a>
