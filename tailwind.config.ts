@@ -24,6 +24,6 @@ const config: Config = {
       screen: "1669px",
     },
   },
-  plugins: [require("tailwindcss-animated")],
+  plugins: [require("tailwindcss-animated"), require("tailwindcss-filters")],
 };
 export default config;

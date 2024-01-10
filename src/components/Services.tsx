@@ -1,66 +1,55 @@
 import React from "react";
 
 function Services() {
-  const servicesData = [
+  const importServices = [
     {
-      title: "Freight Forwarding Services",
+      title: "Accreditation as Importer",
       description:
-        "As a full-service logistics provider, we excel in freight forwarding, ensuring the smooth movement of goods across borders. From documentation to transportation, our end-to-end solutions guarantee a hassle-free shipping experience.",
+        "Seamlessly navigate the importer accreditation process with our expert guidance, ensuring every step is meticulously handled for your peace of mind.",
     },
     {
-      title: "Supply Chain Optimization",
+      title: "Import Declaration",
       description:
-        "Our expertise extends to optimizing your supply chain for maximum efficiency. We assess, strategize, and implement solutions to enhance the flow of goods, minimize delays, and reduce operational costs.",
+        "Experience a hassle-free import process as we streamline your declarations, taking care of intricate paperwork and documentation, so you can focus on the core aspects of your business.",
     },
     {
-      title: "Warehousing and Distribution",
+      title: "Classification & Valuation",
       description:
-        "Benefit from our state-of-the-art warehousing facilities and distribution networks. We provide secure storage, inventory management, and reliable distribution services to keep your supply chain agile.",
+        "Ensure compliance and accuracy in your imports with our detailed classification and valuation services, a meticulous approach to guarantee your goods meet regulatory standards.",
     },
     {
-      title: "International Shipping Coordination",
+      title: "Computation of Duties & Taxes",
       description:
-        "Coordinating international shipping requires precision. Our team ensures timely vessel bookings, container management, and documentation to keep your shipments on schedule.",
+        "Entrust us with the complexities of duties and taxes, where we provide clarity and transparency, allowing you to plan effectively and optimize your cost structures.",
     },
     {
-      title: "Customs Consultancy",
+      title: "Customs Clearance & Processing",
       description:
-        "Beyond brokerage, our customs consultancy services offer strategic insights into navigating complex regulatory landscapes. Stay informed, compliant, and ahead of evolving customs regulations.",
+        "From initial paperwork to final clearance, our efficient team handles the entire customs process, minimizing delays and ensuring your goods move seamlessly through customs.",
     },
     {
-      title: "Trade Compliance Audits",
-      description:
-        "Our proactive approach includes regular trade compliance audits. We review your processes, documentation, and transactions to identify areas for improvement and ensure adherence to regulatory standards.",
+      title:
+        "Check more of what Erth Liner has to offer and experience the ease of reliable logistics tailored just for you",
+      description: "",
+      end: true,
     },
-    {
-      title: "Cross-Border E-commerce Solutions",
-      description:
-        "Capitalize on the growing e-commerce landscape with our cross-border solutions. We facilitate smooth e-commerce logistics, helping you reach a global customer base with ease.",
-    },
-    {
-      title: "Express Cargo Handling",
-      description:
-        "Urgent shipments demand swift handling. Our express cargo services prioritize time-sensitive deliveries, ensuring that your critical shipments reach their destination promptly.",
-    },
-    {
-      title: "Project Cargo Management",
-      description:
-        "Navigate the complexities of project cargo with our specialized management services. We plan, coordinate, and execute the transportation of oversized or specialized shipments with precision.",
-    },
-    {
-      title: "Risk Management Strategies",
-      description:
-        "Mitigate risks with our comprehensive risk management strategies. We assess potential challenges in your logistics chain and implement strategies to safeguard your shipments and investments.",
-    },
+    // {
+    //   title: "Trucking & Hauling",
+    //   description: "Seamless transportation solutions to move your goods safely and on time.",
+    // },
   ];
+  const bg =
+    process.env.NODE_ENV === "development"
+      ? `bg-[url("/assets/img/containers1.png")]`
+      : `bg-[url("https://drylrys08.github.io/erth-liner/assets/img/containers1.png")]`;
   return (
-    <section className="mx-5 lg:mx-20 screen:mx-72 mb-10">
-      <div className="300 flex flex-col items-center">
-        <div className="mb-10 text-center flex flex-col items-center">
-          <h1 className="font-extrabold text-[40px] text-center">
+    <section className={`${bg} bg-cover py-36 px-5 lg:px-20 `}>
+      <div className="flex flex-col lg:flex-row items-center gap-10">
+        <div className="mb-10 flex flex-col lg:items-end ">
+          <h1 className="font-extrabold text-[40px] lg:text-end text-[#F1F1F1]">
             Our services
           </h1>
-          <p className="text-center lg:w-8/12">
+          <p className=" lg:w-8/12 text-[#F1F1F1] lg:text-end">
             We transcend the ordinary, delivering logistics solutions that
             redefine efficiency and reliability in global trade. Our commitment
             to precision and streamlined operations positions us as your trusted
@@ -70,12 +59,29 @@ function Services() {
           </p>
         </div>
 
-        <div className="grid gap-10 justify-center grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 ">
-          {servicesData.map((service, index) => {
+        <div className="grid gap-3 justify-center grid-cols-1 sm:grid-cols-2 md:grid-cols-2 screen:grid-cols-3 ">
+          {importServices.map((service, index) => {
+            const isEnd = service?.end;
+            console.log(isEnd);
             return (
-              <div key={index} className="shadow-md p-5">
-                <h2 className="font-bold text-[20px] mb-5">{service.title}</h2>
-                <p className="">{service.description}</p>
+              <div
+                key={index}
+                className={`shadow-md p-5 rounded-2xl ${
+                  isEnd ? "bg-[#FDB827]" : "bg-[#F1F1F1]"
+                }`}
+              >
+                <h2
+                  className={`font-bold text-[20px] mb-5 text-[#363636] $text-[#363636] `}
+                >
+                  {service.title}
+                </h2>
+                {isEnd ? (
+                  <button className="bg-[#363636] text-[#FDB827] font-bold py-2 px-10 rounded-lg mt-4">
+                    Explore Services &gt; &gt;
+                  </button>
+                ) : (
+                  <p className={`text-[#363636]`}>{service.description}</p>
+                )}
               </div>
             );
           })}

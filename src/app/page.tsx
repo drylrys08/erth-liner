@@ -7,11 +7,13 @@ import ChooseUs from "@/components/ChooseUs";
 import ShortAbout from "@/components/ShortAbout";
 import FacebookMsg from "@/components/FacebookMsg";
 import Services from "@/components/Services";
+import Accreditation from "@/components/Accreditation";
 
 function page() {
   return (
     <MainLayout>
       <LandingPage />
+      <Accreditation />
       <ChooseUs />
       <ShortAbout />
       <Services />

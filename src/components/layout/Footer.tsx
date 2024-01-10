@@ -4,13 +4,13 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 
 function Footer() {
-  const bg =
-    process.env.NODE_ENV === "development"
-      ? `bg-[url("/assets/img/containers1.png")]`
-      : `bg-[url("https://drylrys08.github.io/erth-liner/assets/img/containers1.png")]`;
+  // const bg =
+  //   process.env.NODE_ENV === "development"
+  //     ? `bg-[url("/assets/img/containers1.png")]`
+  //     : `bg-[url("https://drylrys08.github.io/erth-liner/assets/img/containers1.png")]`;
   return (
     <div
-      className={`bg-[#181818] flex flex-col-reverse lg:flex-row lg:justify-between py-12 md:px-40 bg-no-repeat bg-cover bg-center ${bg} rounded-t-3xl mx-3 `}
+      className={`bg-[#181818] flex flex-col-reverse lg:flex-row lg:justify-between py-12 md:px-40 bg-no-repeat bg-cover bg-center `}
     >
       <div className="text-[#F1F1F1] flex flex-col p-4">
         <Icon

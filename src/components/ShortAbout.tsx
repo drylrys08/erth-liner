@@ -8,7 +8,7 @@ function ShortAbout() {
       : `bg-[linear-gradient(rgba(253,184,39,0.7),rgba(253,184,39,0.7)),url("https://drylrys08.github.io/erth-liner/assets/img/truck3.png")]`;
   return (
     <section
-      className={`${bg} max-lg:h-[600px] bg-no-repeat bg-cover bg-bottom mb-10`}
+      className={`${bg} max-lg:h-[600px] bg-no-repeat bg-cover bg-bottom`}
     >
       <div className="flex screen:justify-end items-center h-full">
         <div className="flex flex-col gap-2 lg:gap-11 screen:w-1/2 p-4 lg:p-32 ">
