@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import FacebookMsg from "@/components/FacebookMsg";
 import UrlFormater from "@/lib/UrlFormater";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,7 +32,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <main>
           {children}
-          {/* {process.env.NODE_ENV === "production" && <FacebookMsg />} */}
+          <FacebookMsg />
         </main>
       </body>
     </html>
