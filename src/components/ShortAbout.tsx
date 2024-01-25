@@ -11,7 +11,7 @@ function ShortAbout() {
       className={`${bg} max-lg:h-[600px] bg-no-repeat bg-cover bg-bottom`}
     >
       <div className="flex screen:justify-end items-center h-full">
-        <div className="flex flex-col gap-2 lg:gap-11 screen:w-1/2 p-4 lg:p-32 ">
+        <div className="flex flex-col gap-2 lg:gap-11 screen:w-1/2 p-4 lg:p-20 ">
           <h1 className="font-bold text-[40px] text-[#F1F1F1]">
             Discover Erth liner Cargo Express Co., Your Trusted Partner in Cargo
             Solutions.

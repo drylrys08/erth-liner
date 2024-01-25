@@ -22,7 +22,7 @@ function ChooseUs() {
     },
   ];
   return (
-    <section className="mx-5 sm:mx-20 my-20 md:mx-[150px] lg:mx-[20px] screen:mx-[350px] 2xl:mx-[250px]">
+    <section className="mx-5 sm:mx-20 my-28 md:mx-[150px] lg:mx-[20px] screen:mx-[350px] 2xl:mx-[250px]">
       <div className="w-full flex flex-col items-center gap-10">
         <div className="flex flex-col items-center lg:px-64 gap-5">
           <h1 className="text-5xl text-center font-bold text-[#FDB827]">
