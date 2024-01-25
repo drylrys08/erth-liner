@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <main>
           {children}
-          {process.env.NODE_ENV === "production" && <FacebookMsg />}
+          {/* {process.env.NODE_ENV === "production" && <FacebookMsg />} */}
         </main>
       </body>
     </html>
